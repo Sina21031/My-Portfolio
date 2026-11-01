@@ -53,8 +53,8 @@ const projects = [
     previewText: "Showcasing my development journey.",
     previewClass: "portfolio-preview",
 
-    liveLink: "",
-    githubLink: "",
+    liveLink: "https://soeungsina-portfolio.vercel.app/",
+    githubLink: "https://github.com/Sina21031/My-Portfolio.git",
   },
 
   {
