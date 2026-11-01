@@ -1,0 +1,285 @@
+/* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  min-height: 75px;
+  padding: 15px 180px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(3, 39, 66, 0.95);
+}
+
+/* BRAND */
+.nav .main-text h1 {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+}
+
+/* LINKS */
+.nav .main-link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav .NavLink {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav .NavLink:hover,
+.nav .NavLink.active {
+  color: #00d4ff;
+}
+
+/* MENU BUTTON */
+.nav .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* LAPTOP */
+@media (max-width: 1200px) {
+  .nav {
+    padding: 15px 50px;
+  }
+
+  .nav .main-link {
+    gap: 15px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .nav {
+    padding: 15px 25px;
+  }
+
+  .nav .main-text h1 {
+    font-size: 21px;
+  }
+
+  .nav .main-link {
+    gap: 10px;
+  }
+
+  .nav .NavLink {
+    font-size: 13px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav {
+    padding: 15px 20px;
+  }
+
+  .nav .menu-toggle {
+    display: flex;
+  }
+
+  .nav .main-link {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    background: rgba(3, 39, 66, 0.98);
+  }
+
+  .nav .main-link.show-menu {
+    display: flex;
+  }
+
+  .nav .NavLink {
+    width: 100%;
+    padding: 13px 5px;
+    font-size: 15px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .nav {
+    padding: 13px 15px;
+  }
+
+  .nav .main-text h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav .main-text h1 {
+    font-size: 15px;
+  }
+}
+
+/*for footer*/
+
+.footer {
+  width: 100%;
+  padding: 30px 20px 20px;
+  background: #333131;
+  color: white;
+  border-top: 1px solid #e5e7eb;
+}
+.footer-built {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.built-title {
+  margin: 0;
+  color: #f6f1f1;
+  font-size: 17px;
+  text-align: center;
+}
+
+.built-technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tech-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #f8f6f6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.tech-item svg {
+  font-size: 19px;
+}
+
+.tech-item:hover {
+  transform: translateY(-2px);
+}
+
+.vite svg {
+  color: #646cff;
+}
+
+.react svg {
+  color: #149eca;
+}
+
+.tailwind svg {
+  color: #06b6d4;
+}
+
+/* Divider */
+.footer-divider {
+  width: 85%;
+  max-width: 1000px;
+  height: 1px;
+  margin: 0 auto 20px;
+  background: #eff3fa;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  color: #f5f2f2;
+  font-size: 19px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #1877f2;
+  transform: translateY(-3px);
+}
+
+/* Copyright */
+.footer-copyright {
+  margin: 0;
+  color: #fbf8f8;
+  font-size: 13px;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer {
+    padding: 25px 15px 20px;
+  }
+
+  .footer-built {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .built-technologies {
+    gap: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}

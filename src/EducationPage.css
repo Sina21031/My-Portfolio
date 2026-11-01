@@ -1,0 +1,599 @@
+
+/* =====================================
+   EDUCATION PAGE
+===================================== */
+
+#education.education-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 24px 90px;
+  background: #050b1c;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+#education .education-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* =====================================
+   PAGE HEADER
+===================================== */
+
+#education .education-header {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+#education .education-subtitle {
+  display: inline-block;
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+#education .education-header h1 {
+  font-size: clamp(34px, 5vw, 48px);
+  font-weight: 800;
+  margin: 0 0 15px;
+  color: #ffffff;
+}
+
+#education .education-header h1 span {
+  background: linear-gradient(
+    90deg,
+    #60a5fa,
+    #a78bfa
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#education .education-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =====================================
+   SECTION HEADING
+===================================== */
+
+#education .academic-section,
+#education .certificates-section {
+  margin-bottom: 75px;
+}
+
+#education .education-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 28px;
+}
+
+#education .heading-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.13);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+#education .certificate-heading-icon {
+  color: #c4b5fd;
+  background: rgba(139, 92, 246, 0.13);
+  border-color: rgba(167, 139, 250, 0.2);
+}
+
+#education .education-section-heading h2 {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+#education .education-section-heading p {
+  color: #94a3b8;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* =====================================
+   ACADEMIC CARDS
+===================================== */
+
+#education .education-timeline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+#education .education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 25px;
+  min-height: 240px;
+
+  background: linear-gradient(
+    135deg,
+    #101e38,
+    #0a1428
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.17);
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+#education .education-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(96, 165, 250, 0.65);
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.12);
+}
+
+#education .education-card-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.13);
+  border-radius: 13px;
+}
+
+#education .education-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+#education .education-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+
+#education .education-level {
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+#education .education-status {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+#education .education-status.completed {
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+#education .education-status.progress {
+  color: #fcd34d;
+  background: rgba(234, 179, 8, 0.12);
+}
+
+#education .education-card-content h3 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+#education .education-institution,
+#education .education-period {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a5b4fc;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+#education .education-period {
+  color: #94a3b8;
+}
+
+#education .education-description {
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 13px 0 0;
+}
+
+/* =====================================
+   CERTIFICATE GRID
+===================================== */
+
+#education .certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+#education .certificate-card {
+  min-width: 0;
+  overflow: hidden;
+
+  background: linear-gradient(
+    145deg,
+    #12213c,
+    #0a1428
+  );
+
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+#education .certificate-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(167, 139, 250, 0.65);
+  box-shadow: 0 15px 40px rgba(124, 58, 237, 0.13);
+}
+
+/* Certificate Image */
+
+#education .certificate-image-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 245px;
+  padding: 15px;
+
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#education .certificate-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+#education .certificate-card:hover .certificate-image {
+  transform: scale(1.04);
+}
+
+#education .certificate-zoom {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+
+  background: rgba(5, 11, 28, 0.7);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+#education .certificate-card:hover .certificate-zoom {
+  opacity: 1;
+}
+
+/* Certificate Placeholder */
+
+#education .certificate-placeholder {
+  width: 100%;
+  height: 245px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background: linear-gradient(
+    145deg,
+    #0c1930,
+    #101f3a
+  );
+
+  border-bottom: 1px dashed rgba(96, 165, 250, 0.3);
+  color: #94a3b8;
+  transition: 0.3s ease;
+}
+
+#education .certificate-placeholder:hover {
+  background: #142746;
+}
+
+#education .placeholder-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px dashed rgba(96, 165, 250, 0.5);
+  border-radius: 18px;
+}
+
+#education .certificate-placeholder span {
+  color: #dbeafe;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#education .certificate-placeholder small {
+  color: #64748b;
+  font-size: 11px;
+}
+
+/* Certificate Information */
+
+#education .certificate-info {
+  padding: 22px;
+}
+
+#education .certificate-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+#education .certificate-award-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  color: #c4b5fd;
+  background: rgba(139, 92, 246, 0.15);
+  border-radius: 10px;
+}
+
+#education .certificate-year {
+  color: #c4b5fd;
+  background: rgba(139, 92, 246, 0.12);
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+#education .certificate-info h3 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 9px;
+}
+
+#education .certificate-institution {
+  color: #60a5fa;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+#education .certificate-description {
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+#education .view-certificate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 10px 16px;
+
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed
+  );
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#education .view-certificate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(59, 130, 246, 0.3);
+}
+
+/* =====================================
+   CERTIFICATE LIGHTBOX
+===================================== */
+
+#education .certificate-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 35px;
+
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+#education .lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 45px;
+  height: 45px;
+
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#education .lightbox-close:hover {
+  background: #dc2626;
+  transform: rotate(90deg);
+}
+
+#education .lightbox-content {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  text-align: center;
+}
+
+#education .lightbox-content img {
+  display: block;
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+#education .lightbox-caption {
+  margin-top: 15px;
+}
+
+#education .lightbox-caption h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 7px;
+}
+
+#education .lightbox-caption p {
+  color: #94a3b8;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 900px) {
+  #education .education-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  #education .certificates-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  #education.education-section {
+    padding: 55px 16px 65px;
+  }
+
+  #education .education-header {
+    margin-bottom: 45px;
+  }
+
+  #education .education-section-heading h2 {
+    font-size: 19px;
+  }
+
+  #education .education-card {
+    padding: 18px;
+    gap: 13px;
+  }
+
+  #education .education-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  #education .education-card-content h3 {
+    font-size: 16px;
+  }
+
+  #education .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #education .certificate-image-button,
+  #education .certificate-placeholder {
+    height: 220px;
+  }
+
+  #education .certificate-zoom {
+    opacity: 1;
+    inset: auto 15px 15px auto;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 0;
+    background: rgba(5, 11, 28, 0.8);
+  }
+
+  #education .certificate-zoom svg {
+    width: 19px;
+  }
+
+  #education .certificate-lightbox {
+    padding: 15px;
+  }
+
+  #education .lightbox-close {
+    top: 12px;
+    right: 12px;
+  }
+
+  #education .lightbox-content img {
+    max-height: 70vh;
+  }
+}
